@@ -74,11 +74,12 @@
               {%- else %}
               <li class="nav-item {% if page.title == p.title %}active{% endif %}">
 
-                {%- if p.title == 'cv' and site.static_cv%}
 
                 <!-- TODO: Remove duplicated code here required to open static CV pdf in new tab (target = "_blank") -->
 
-                <a class="nav-link" target="_blank" href="{{ '/assets/pdf/' | relative_url }}{{ p.cv_pdf }}{{ p.url | relative_url }}">{{ p.title }}
+                {%- if p.title == 'cv' and site.static_cv%}
+
+                <a class="nav-link" target="_blank" href="{{ '/assets/pdf/' | relative_url }}{{ p.cv_pdf }}">{{ p.title }}
                   {%- if page.title == p.title -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
