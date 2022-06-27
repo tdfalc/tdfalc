@@ -2,6 +2,14 @@ _site/
 .cache/
 .jekyll-cache/
 node_modules/
+.bundle
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+.DS_store
+.ruby-version
+.tweet-cache
+vendor
 
 _site
 .sass-cache
