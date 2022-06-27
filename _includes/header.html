@@ -73,11 +73,27 @@
               </li>
               {%- else %}
               <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-                <a class="nav-link" href="{%- if p.title == 'cv' and site.static_cv%}{{ '/assets/pdf/' | relative_url }}{{ p.cv_pdf }}{%- else %}{{ p.url | relative_url }}{%- endif -%}">{{ p.title }}
+
+                {%- if p.title == 'cv' and site.static_cv%}
+
+                <!-- TODO: Remove duplicated code here required to open static CV pdf in new tab (target = "_blank") -->
+
+                <a class="nav-link" target="_blank" href="{{ '/assets/pdf/' | relative_url }}{{ p.cv_pdf }}{{ p.url | relative_url }}{%- endif -%}">{{ p.title }}
                   {%- if page.title == p.title -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
                 </a>
+
+                {%- else %}
+
+                <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}
+                  {%- if page.title == p.title -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+
+                {%- endif -%}
+
               </li>
               {%- endif -%}
               {%- endif -%}
