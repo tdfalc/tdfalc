@@ -1,0 +1,41 @@
+<form action="https://formspree.io/f/{{ site.formspree_id }}" method="POST">
+
+    <div class="form-group">
+        <label required="required">Name:</label>
+        <input type="text" name="name" class="form-control" placeholder="Joe Bloggs">
+    </div>
+
+    <div class="form-group">
+        <label required="required">Email:</label>
+        <!-- Setting name as _replyto means the submission can be replied to when it arrives my inbox -->
+        <input type="email" name="_replyto" class="form-control" placeholder="joe@bloggs.com">
+    </div>
+
+    <!-- Add a subject line so that I know where the email submission has come from -->
+    <input type="hidden" name="_subject" value="Personal Website Contact">
+      
+    <label required="required">Message:</label>
+      <textarea name="message"  class="form-control" placeholder="Ikke gå som katten om den varme grød."></textarea>
+    </label>
+
+    <!-- <hr>
+    <div class="form-group mt-3">
+        <label class="mr-1">Attach file:</label>
+        <input type="file" name="file">
+    </div>
+    <hr>
+   -->
+
+   <!-- Built in honeypot method to prevent spam. Users won’t see the _gotcha field but spambots will fill
+    it in automatically. If this field is filled in, it will be filtered into the spam folder. -->
+    <input type="text" name="_gotcha" style="display:none" />
+
+   <!-- Re-direction after the form has been filled in (only available on paid plan) -->
+   <!-- <input type="hidden" name="_next" value="https://my-site.tld/thanks.html" /> -->
+
+    <hr>
+    <!-- <button type="submit">Send</button> -->
+    <input type="submit" value="Send">
+    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+
+  </form>

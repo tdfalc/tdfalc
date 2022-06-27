@@ -1,0 +1,36 @@
+I"w<!-- _pages/publications.md -->
+<div class="publications">
+  <h2 class="year">2021</h2>
+  <ol class="bibliography"><li><!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 abbr"><abbr class="badge">Preprint</abbr></div>
+
+  <!-- Entry bib key -->
+  <div id="https://doi.org/10.48550/arxiv.2110.00306" class="col-sm-8">
+    <img src="/tdfalc//assets/img/opf_strategies.jpg" width="100%" height="45%" /><hr />
+    <!-- Title -->
+    <div class="title">Leveraging power grid topology in machine learning assisted optimal power flow</div>
+    <!-- Author -->
+    <div class="author">
+      <em>Falconer, Thomas</em>,&nbsp;and <a href="https://www.letifmones.com/">Mones, Letif</a>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>arXiv.org e-Print,</em> 2021
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a href="https://arxiv.org/abs/2110.00306" class="btn btn-sm z-depth-0" role="button">URL</a>
+      <a href="/tdfalc/assets/pdf/MachineLearningOPF.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+    </div>
+
+    
+  </div>
+</div></li></ol>
+
+
+</div>
+:ET

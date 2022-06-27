@@ -1,0 +1,98 @@
+# - title: General Information
+#   type: map
+#   contents:
+#     - name: Full Name
+#       value: Thomas Falconer
+#     - name: Date of Birth
+#       value: 15th July 1996
+#     - name: Languages
+#       value: English
+
+# - title: Education
+#   type: time_table
+#   contents:
+#     - title: Ph.D. Electrical Engineering
+#       institution: Danmarks Tekniske Universitet, København, Danmark
+#       year: May 2022 - Present
+#       description:
+#         - Machine learning for revenue-maximizing auction design.
+#         - Economics of data and data markets.
+#         - Data-driven and market-orientated planning and operation of power systems.
+
+#     - title: M.Sc. Energy Systems and Data Analytics
+#       institution: University College London, London, United Kingdom
+#       year: Oct 2019 - Sep 2020
+#       description:
+#         - Statistical Data Analysis, Supervised Learning, Unsupervised Learning, Advanced Energy System Modelling, Spatial Analysis of Energy Data, Built Environment and Transport Analytics.
+
+#     - title: B.Eng. Chemical Engineering
+#       institution: Heriot-Watt University, Edinburgh, United Kingdom
+#       year: Sep 2014 - Jun 2019
+#       description:
+#         - Chemical Reactivity, Chemical Kinetics, Multi-Phase Thermodynamics, Fluid Mechanics, Separation Processes, Chemistry of Materials, Process Control and Optimization.
+
+# - title: Experience
+#   type: time_table
+#   contents:
+#     - title: Data Scientist (Junior)
+#       institution: Arenko Group, London, United Kingdom
+#       year: Jan 2021 - May 2022
+#       description:
+#         - Developing pobabilistic models to forecast wholesale electricity prices and to optimize trading decisions for flexible assets.
+
+#     - title: Teaching Assistant (Energy and Artificial Intelligence Lab)
+#       institution: University College London, London, United Kingdom
+#       year: Oct 2020 - Jan 2021
+#       description:
+#         - Assisted delivery of postgraduate modules in statistics and machine learning.
+
+#     - title: Machine Learning Research (Intern)
+#       institution: Invenia Labs, Cambridge, United Kingdom
+#       year: May 2020 - Oct 2020
+#       description:
+#         - Explored the intersection of graph theory and machine learning to augment traditional optimisation methods for power grid planning operation.
+
+#     - title: Partnership Project Executive
+#       institution: Engineers Without Borders, London, United Kingdom
+#       year: Sep 2019 - Feb 2020
+#       description:
+#         - Developed and monitored collaborative projects between UCL and Engineers Without Borders.
+
+#     - title: Salesforce System Consultant (x3 Certified Specialist)
+#       institution: PolSource, Kraków, Polska
+#       year: Jun 2018 - Dec 2019
+#       description:
+#         - Delivered business value to clients through design and implementation of robust SaaS solutions.
+
+# # - title: Open Source Projects
+# #   type: time_table
+# #   contents:
+# #     - title: <a href="https://github.com/alshedivat/al-folio">MLOPF.jl</a>
+# #       year: 2015-now
+# #       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: Jun 2019
+#       items: 
+#         - Chemical Engineering Departmental Prize
+#         - Chevron Prize for Best Student in a Team Environment
+#         - Deputy Principal’s Award
+
+# # - title: Academic Interests
+# #   type: nested_list
+# #   contents:
+# #     - title: Topic 1.
+# #       items: 
+# #         - Description 1.
+# #         - Description 2.
+# #     - title: Topic 2.
+# #       items:
+# #         - Description 1.
+# #         - Description 2.
+
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Cycing, running, swimming (should probably give a triathlon a try) and walking my dog.

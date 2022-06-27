@@ -1,0 +1,28 @@
+// Define content layout classes.
+
+body {
+  padding-bottom: 70px;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+  h1, h2, h3, h4, h5, h6 {
+    scroll-margin-top: 66px;
+  }
+}
+
+body.fixed-top-nav {
+  padding-top: 56px; // add some padding for the nav-bar
+}
+
+body.sticky-bottom-footer {
+  padding-bottom: 0; // remove padding below footer
+}
+
+.container {
+  max-width: $max-content-width;
+}
+
+.profile {
+  img {
+    width: 100%;
+  }
+}
