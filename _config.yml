@@ -98,9 +98,9 @@ bing_site_verification:  # bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: "@tdfalc"
-blog_nav_title: blog # blog must have a title for it to be displayed in the nav bar
-blog_description: How effective is the Feynman technique?
+# blog_name: "@tdfalc"
+# blog_nav_title: blog # blog must have a title for it to be displayed in the nav bar
+# blog_description: How effective is the Feynman technique?
 permalink: /blog/:year/:title/
 
 # Pagination
