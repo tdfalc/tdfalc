@@ -19,7 +19,7 @@ social: true  # includes social icons at the bottom of the page
 
 I am a Ph.D. candidate at [Danmarks Tekniske Universitet](https://https://www.dtu.dk/) (DTU) within the 
 [Energy Markets and Analytics](https://orbit.dtu.dk/en/organisations/energy-analytics-and-markets) section, 
-at the Department of Wind and Energy Systems, [Center for Electric Power and Energy](https://www.cee.elektro.dtu.dk/) (supervised by Associate Professor [Jalal Kazempour](https://www.jalalkazempour.com/)).
+at the Department of Wind and Energy Systems, [Center for Electric Power and Energy](https://www.cee.elektro.dtu.dk/) (supervised by Dr. [Jalal Kazempour](https://www.jalalkazempour.com/) and Dr. [Pierre Pinson](https://pierrepinson.com/)).
 
 My research interests include mechanism design and the economics of data within a power systems context. 
 This generally inolves problems at the intersection of machine learning, optimization and game theory.
