@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://thomasfalconer.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://thomasfalconer.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-07-27T11:07:36+02:00</updated><id>https://thomasfalconer.com/feed.xml</id><title type="html">blank</title><entry><title type="html">A brief introduction to numerical integration</title><link href="https://thomasfalconer.com/blog/2022/integration/" rel="alternate" type="text/html" title="A brief introduction to numerical integration" /><published>2022-07-19T00:00:00+02:00</published><updated>2022-07-19T00:00:00+02:00</updated><id>https://thomasfalconer.com/blog/2022/integration</id><content type="html" xml:base="https://thomasfalconer.com/blog/2022/integration/"><![CDATA[<p>We’re all familiar with the daily struggle of trying to find the closed form integral of some function \(f(x)\) – can’t seem to find the time, right? Or perhaps, more likely, the required mathematics is simply rather grueling. Well, it turns out that we typically just need to <em>approximate</em> the definite integral, that is, to find the (net) <em>area under the curve</em> between some fixed limits, \([a, b]\):</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-05-29T15:35:08+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><entry><title type="html">Beginnings</title><link href="http://localhost:4000/blog/2022/beginnings/" rel="alternate" type="text/html" title="Beginnings" /><published>2022-07-27T00:00:00+02:00</published><updated>2022-07-27T00:00:00+02:00</updated><id>http://localhost:4000/blog/2022/beginnings</id><content type="html" xml:base="http://localhost:4000/blog/2022/beginnings/"><![CDATA[<p>Hi there, I’m <a href="https://thomasfalconer.com/">Thomas</a>. I’m not sure how people usually kick-start a blog, so bear with me whilst I figure this out.</p>
+
+<p>I see this place as a way to publish things that are too long for Twitter, too opinionated for Wikipedia, and not pretentious enough for Medium. I’m going to try and keep it to three themes: privacy, research, and privacy research. I’m not (yet) a specialist in any of these. Hopefully, thanks for my jobs and personal interest in those topics, I can add something valuable to what’s written online about them.</p>
+
+<p>I intend to use this space to jot down my thoughts</p>
+
+<p>The following is a snapshot of the vision I have of these three themes right now.</p>
+
+<p>The following is the vision I have of these three themes. This should give an idea of what I intend to talk about in this blog =)</p>
+
+<p>auction design, economics of data</p>
+
+<p>as I meander A vast collection of thoughts, outreach, projects and travel.</p>
+
+<p>Use the buttons below to filter down.</p>
+
+<p>I have no idea</p>
+
+<p>Hi there! I’m Damien. I have no idea how people usually start blogs, so bear with me while I figure this out.</p>
+
+<p>I see this place as a way to publish things that are too long for Twitter, too opinionated for Wikipedia, and not pretentious enough for Medium. I’m going to try and keep it to three themes: privacy, research, and privacy research. I’m not (yet) a specialist in any of these. Hopefully, thanks for my jobs and personal interest in those topics, I can add something valuable to what’s written online about them.</p>
+
+<p>My intention is to use this space to jot down thoughts and ideas.
+Ideally, I will stick to three key themes: data, privacy and</p>
+
+<p>I’m not (yet) a specialist in this topic. Hop</p>
+
+<p>I see this place as a way to publish things that are too long for Twitter, too opinionated for Wikipedia, and not pretentious enough for Medium. I’m going to try and keep it to three themes: privacy, research, and privacy research. I’m not (yet) a specialist in any of these. Hopefully, thanks for my jobs and personal interest in those topics, I can add something valuable to what’s written online about them.</p>
+
+<p>The following is the vision I have of these three themes. This should give an idea of what I intend to talk about in this blog =)</p>
+
+<h1 id="1">1.</h1>]]></content><author><name></name></author><summary type="html"><![CDATA[Hello, world.]]></summary></entry><entry><title type="html">Beginnings</title><link href="http://localhost:4000/blog/2022/beginnings/" rel="alternate" type="text/html" title="Beginnings" /><published>2022-07-27T00:00:00+02:00</published><updated>2022-07-27T00:00:00+02:00</updated><id>http://localhost:4000/blog/2022/beginnings</id><content type="html" xml:base="http://localhost:4000/blog/2022/beginnings/"><![CDATA[<p>Hi there, I’m <a href="https://thomasfalconer.com/">Thomas</a>.</p>
+
+<p>In this first post I wanted to explore the basics of blogging blogdown. I treat an example of a little python challenge which I encountered in first my job hunt process. I particularly like it because it is a geometric problem.</p>
+
+<p>Hi there, I’m <a href="https://thomasfalconer.com/">Thomas</a>. I’m not sure how people usually kick-start a blog, so bear with me whilst I figure this out.</p>
+
+<p>I see this place as a way to publish things that are too long for Twitter, too opinionated for Wikipedia, and not pretentious enough for Medium. I’m going to try and keep it to three themes: privacy, research, and privacy research. I’m not (yet) a specialist in any of these. Hopefully, thanks for my jobs and personal interest in those topics, I can add something valuable to what’s written online about them.</p>
+
+<p>I intend to use this space to jot down my thoughts</p>
+
+<p>The following is a snapshot of the vision I have of these three themes right now.</p>
+
+<p>The following is the vision I have of these three themes. This should give an idea of what I intend to talk about in this blog =)</p>
+
+<p>auction design, economics of data</p>
+
+<p>as I meander A vast collection of thoughts, outreach, projects and travel.</p>
+
+<p>Use the buttons below to filter down.</p>
+
+<p>I have no idea</p>
+
+<p>Hi there! I’m Damien. I have no idea how people usually start blogs, so bear with me while I figure this out.</p>
+
+<p>I see this place as a way to publish things that are too long for Twitter, too opinionated for Wikipedia, and not pretentious enough for Medium. I’m going to try and keep it to three themes: privacy, research, and privacy research. I’m not (yet) a specialist in any of these. Hopefully, thanks for my jobs and personal interest in those topics, I can add something valuable to what’s written online about them.</p>
+
+<p>My intention is to use this space to jot down thoughts and ideas.
+Ideally, I will stick to three key themes: data, privacy and</p>
+
+<p>I’m not (yet) a specialist in this topic. Hop</p>
+
+<p>I see this place as a way to publish things that are too long for Twitter, too opinionated for Wikipedia, and not pretentious enough for Medium. I’m going to try and keep it to three themes: privacy, research, and privacy research. I’m not (yet) a specialist in any of these. Hopefully, thanks for my jobs and personal interest in those topics, I can add something valuable to what’s written online about them.</p>
+
+<p>The following is the vision I have of these three themes. This should give an idea of what I intend to talk about in this blog =)</p>
+
+<h1 id="1">1.</h1>]]></content><author><name></name></author><summary type="html"><![CDATA[Hello, world.]]></summary></entry><entry><title type="html">A brief introduction to numerical integration</title><link href="http://localhost:4000/blog/2022/integration/" rel="alternate" type="text/html" title="A brief introduction to numerical integration" /><published>2022-07-19T00:00:00+02:00</published><updated>2022-07-19T00:00:00+02:00</updated><id>http://localhost:4000/blog/2022/integration</id><content type="html" xml:base="http://localhost:4000/blog/2022/integration/"><![CDATA[<p>We’re all familiar with the daily struggle of trying to find the closed form integral of some function \(f(x)\) – can’t seem to find the time, right? Or perhaps, more likely, the required mathematics is simply rather grueling. Well, it turns out that we typically just need to <em>approximate</em> the definite integral, that is, to find the (net) <em>area under the curve</em> between some fixed limits, \([a, b]\):</p>
 
 <p>\begin{align} \int_{a}^{b} f(x) \, dx \end{align}</p>
 
