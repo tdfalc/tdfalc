@@ -27,7 +27,7 @@ This generally inolves problems at the intersection of machine learning, optimiz
 I hold an M.Sc. in Energy Systems and Data Analytics from 
 [University College London](https://www.ucl.ac.uk/)
 ([Energy and Artifical Intelligence Lab](https://www.ucl.ac.uk/bartlett/energy/research/energy-systems-and-artificial-intelligence-lab)),
-where I wrote my [thesis](https://arxiv.org/abs/2110.00306) in collaboration with [Invenia Labs](https://www.invenia.ca/labs/), supervised by Dr. [Letif Mones](https://www.letifmones.com/).
+where I wrote my [thesis](https://ieeexplore.ieee.org/document/9810496) in collaboration with [Invenia Labs](https://www.invenia.ca/labs/), supervised by Dr. [Letif Mones](https://www.letifmones.com/).
 
 Before starting my Ph.D., I worked within the Data Science team at [Arenko Group](https://www.arenko.group/) 
 developing probabilistic models to forecast wholesale electricity prices and to optimize trading 

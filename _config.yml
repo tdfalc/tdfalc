@@ -12,7 +12,7 @@ footer_text: # text displayed after copyright
 keywords: # add keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: earth.png #⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/) #
 
 url: https://thomasfalconer.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. if url is https://tdfalc.github.io, this would be /tdfalc/
