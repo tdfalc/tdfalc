@@ -8,11 +8,16 @@
 </head>
 
 <body>
-    <iframe src="common.html" style="border:none; width:100%; height:400px;"></iframe>
+    <div id="common-content"></div>
 
-    <a class="nav-link" href="/research/">Research</a>
-    <a class="nav-link" href="/learning/">Learning</a>
-    <a class="nav-link" href="/writing/">Blog</a>
+    <script>
+        fetch('common.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('common-content').innerHTML = data;
+            });
+    </script>
+
 
 </body>
 
