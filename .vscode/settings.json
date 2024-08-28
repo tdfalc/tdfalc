@@ -1,0 +1,40 @@
+{
+    "github.copilot.inlineSuggest.enable": true,
+    "terminal.integrated.inheritEnv": false, // conda environment inheritrance bugfix.
+    // Colors and Theme
+    "workbench.colorCustomizations": {
+        "[One Dark Pro]": {
+            "tab.activeBackground": "#3c424e",
+            "activityBar.background": "#202329",
+            "editor.background": "#0d0e10",
+            "editorCursor.foreground": "#00c3ff",
+            "terminalCursor.foreground": "#ffc800",
+        }
+    },
+    // Julia settings
+    //"juliaFormatter.margin": 100,
+    // Editor
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        140
+    ],
+    "editor.tabSize": 4,
+    // Python
+    // "python.defaultInterpreterPath": "/Users/tdfalc/miniconda3/envs/tdfalc/bin/python",
+    //"python.defaultInterpreterPath": "/Users/tdfalc/miniconda3/envs/gridstream/bin/python",
+    // "python.pythonPath": "/Users/tdfalc/miniconda3/envs/tdfalc/bin/python",
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "${workspaceFolder}" // run from top level
+    },
+    "python.formatting.provider": "black",
+    "python.testing.pytestEnabled": true,
+    "python.languageServer": "Pylance",
+    "black-formatter.args": [
+        "--line-length",
+        "200"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "julia.environmentPath": "/Users/tdfalc/Projects/Personal/tdfalc",
+}
