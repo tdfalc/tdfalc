@@ -2,7 +2,6 @@ import os
 import subprocess
 import shutil
 import sys
-import tempfile
 from pathlib import Path
 
 
