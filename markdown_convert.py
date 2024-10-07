@@ -1,58 +1,58 @@
-from typing import Optional
 from pathlib import Path
 from datetime import datetime as dt
 import argparse
-
 import markdown
+from pygments.formatters import HtmlFormatter
+from pygments.styles import get_style_by_name
 
 
-def convert_markdown_to_html(input_file: str, output_file: Optional[str] = None) -> None:
-    """Convert a Markdown file to a complete HTML document and save it to an output file.
+def convert_markdown_to_html(input_file: str, output_file: str = None) -> None:
+    input_path = Path(input_file)
+    output_file = output_file or input_path.with_suffix(".html")
 
-    Args:
-        input_file (str): Path to the input Markdown file.
-        output_file (str, optional): Path to the output HTML file. If not provided,
-                                     it will use the same directory and name as the input file.
-    """
-    # Determine the output file path
-    if output_file is None:
-        input_path = Path(input_file)
-        output_file = input_path.with_suffix(".html")
-
-    # Read the Markdown file
     with open(input_file, "r", encoding="utf-8") as md_file:
         markdown_text = md_file.read()
 
-    # Current date for the update
     current_date = dt.now().strftime("%Y-%m-%d")
+    updated_markdown = markdown_text.replace("Last updated:", f"Last updated: {current_date}")
 
-    # Update the "Last updated" line
-    lines = markdown_text.splitlines()
-    updated_lines = []
-    for line in lines:
-        if "Last updated" in line:
-            updated_lines.append(f"_Last updated: {current_date}_")
-        else:
-            updated_lines.append(line)
-    updated_markdown_text = "\n".join(updated_lines)
+    extensions = ["tables", "fenced_code", "codehilite"]
+    body_html = markdown.markdown(updated_markdown, extensions=extensions)
 
-    # Convert Markdown to HTML
-    body_html = markdown.markdown(updated_markdown_text, extensions=["markdown.extensions.tables"])
+    # Use a style that better highlights function calls
+    pygments_style = get_style_by_name("monokai")
+    pygments_css = HtmlFormatter(style=pygments_style).get_style_defs(".codehilite")
 
-    # Create a complete HTML document
-    complete_html = f"""<!DOCTYPE html>
+    html_template = f"""
+    <!DOCTYPE html>
     <html>
-        <head>
-            <meta charset="utf-8">
-        </head>
-        <body>
-            {body_html}
-        </body>
-    </html>"""
+    <head>
+        <meta charset="utf-8">
+        <style>
+            {pygments_css}
+            .codehilite {{
+                background-color: {pygments_style.background_color};
+                border: 1px solid #ccc;
+                padding: 5px;
+                margin: 10px 0;
+                overflow: auto;
+            }}
+            .codehilite pre {{
+                margin: 0;
+                padding: 0;
+            }}
+            .codehilite code {{
+                background-color: transparent;
+                padding: 0;
+            }}
+        </style>
+    </head>
+    <body>{body_html}</body>
+    </html>
+    """
 
-    # Write the complete HTML output to a file
     with open(output_file, "w", encoding="utf-8") as html_file:
-        html_file.write(complete_html)
+        html_file.write(html_template)
 
     print(f"Converted '{input_file}' to '{output_file}' successfully.")
 
