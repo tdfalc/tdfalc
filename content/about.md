@@ -5,7 +5,7 @@
 ## Thomas Falconer
 
 <a class="nav-link" href="/research/">Research</a>
-<a class="nav-link" href="/writing/">Writing</a>
+<a class="nav-link" href="/blog/">Blog</a>
 <a class="nav-link" href="/assets/pdf/resume.pdf">Resume</a>
 
 [<img src="/assets/img/logos/linkedin.svg" width="30">](https://www.linkedin.com/in/thomas-falconer)
