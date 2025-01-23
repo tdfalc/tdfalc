@@ -6,6 +6,7 @@ source "https://rubygems.org"
 # Required to include bibliography
 #gem "jekyll-scholar", group: :jekyll_plugins
 
+gem "minima", "~> 2.5"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
     gem "jekyll", "~> 4.2.0"
@@ -19,11 +20,11 @@ group :jekyll_plugins do
     gem 'jekyll-paginate-v2'
     gem 'jekyll-sitemap'
     gem 'jekyll-target-blank'
-    gem 'jekyll-twitter-plugin'
     gem 'jemoji'
     gem 'mini_racer'
     gem 'unicode_utils'
     gem 'webrick'
+    gem "jekyll-katex"
 end
 
 group :other_plugins do

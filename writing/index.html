@@ -1,9 +1,7 @@
 ---
-title: "Writing"
 ---
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -12,23 +10,20 @@ title: "Writing"
 </head>
 
 <body>
-
-
-
     {% include nav.html %}
-    <div id="research-content" class="wrap"></div>
+    <div id="writing-content" class="wrap"></div>
 
     <script>
-        fetch('/content/research.html')
+        fetch('/content/writing.html')
             .then(response => response.text())
             .then(data => {
-                document.getElementById('research-content').innerHTML = data;
+                document.getElementById('writing-content').innerHTML = data;
             });
     </script>
 
-
-
-
 </body>
+
+
+
 
 </html>

@@ -1,15 +1,17 @@
+---
+---
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas D. Falconer</title>
+    <!-- <title>Thomas D. Falconer</title> -->
+
+    <link href='/css/blog.css' rel='stylesheet' />
 </head>
 
 <body>
-    <div id="about-content"></div>
-
+    <div id="about-content" class="wrap"></div>
     <script>
         fetch('./content/about.html')
             .then(response => response.text())
@@ -18,14 +20,14 @@
             });
     </script>
 
-    <div id="timeline-content"></div>
+    <!-- <div id="timeline-content"></div>
     <script>
         fetch('./content/timeline.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('timeline-content').innerHTML = data;
             });
-    </script>
+    </script> -->
 
 
 
