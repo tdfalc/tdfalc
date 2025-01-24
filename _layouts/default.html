@@ -9,14 +9,19 @@
     <meta name='keywords' content='{{ page.keywords }}'>
     <meta name='author' content='Gregory Gundersen'>
 
-
     <link href='/css/common.css' rel='stylesheet' />
     <link href='/css/blog.css' rel='stylesheet' />
     <link href='/css/trac.css' rel='stylesheet' />
     <link href='/css/markdown.css' rel='stylesheet' />
 
     {% include favicon.html %}
-    {% include mathjax.html %}
+    {% include katex.html %}
+
+    {% include highlight.html %}
+    {% include toggle.html %}
+
+
+
 </head>
 
 <body>
@@ -31,11 +36,18 @@
                         <h3>Published</h3>
                         <p>{{ page.date | date: '%d %B %Y' }}</p>
                     </div>
+                    <!-- Toggle Button for Code Blocks -->
+                    <div class="toggle-code-container">
+                        <button id="toggle-code-btn" aria-expanded="false">Show Code Blocks</button>
+                    </div>
+
                 </div>
                 <div class='clear'></div>
             </div>
         </div>
+
         <div class='wrap article'>
+
             {{ content }}
         </div>
         <div id='bibliography'>
@@ -44,6 +56,8 @@
             </div>
         </div>
     </div>
+
+
 </body>
 
 </html>

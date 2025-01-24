@@ -176,3 +176,34 @@ hr {
         margin: 0 7px;
     }
 }
+
+/* Toggle Button Container */
+.toggle-code-container {
+    text-align: right;
+    /* Adjust alignment as needed */
+    padding: 10px 20px;
+    /* background-color: #282c34; */
+}
+
+/* Toggle Button */
+#toggle-code-btn {
+    /* background-color: #61dafb; */
+    /* Button color */
+    color: #282c34;
+    /* border: black;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; */
+    transition: background-color 0.3s;
+}
+
+/* #toggle-code-btn:hover {
+    background-color: magenta;
+    /* Darker shade on hover */
+
+
+/* #toggle-code-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #21a1f1;
+} */

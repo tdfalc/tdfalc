@@ -1,0 +1,42 @@
+<!-- JavaScript for Toggle Functionality -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleBtn = document.getElementById('toggle-code-btn');
+        const codeBlocks = document.querySelectorAll('pre code');
+
+        // Function to toggle code blocks visibility
+        function toggleCodeBlocks() {
+            const isHidden = toggleBtn.getAttribute('aria-expanded') === 'false';
+            codeBlocks.forEach((block) => {
+                const pre = block.parentElement;
+                if (isHidden) {
+                    pre.style.display = 'block';
+                } else {
+                    pre.style.display = 'none';
+                }
+            });
+            // Update button text and aria attribute
+            toggleBtn.textContent = isHidden ? 'Hide Code Blocks' : 'Show Code Blocks';
+            toggleBtn.setAttribute('aria-expanded', isHidden);
+            // Save preference to localStorage
+            localStorage.setItem('codeBlocksHidden', !isHidden);
+        }
+
+        // Initialize based on saved preference
+        const codeBlocksHidden = localStorage.getItem('codeBlocksHidden') === 'true';
+        if (codeBlocksHidden) {
+            toggleCodeBlocks();
+        } else {
+            // Hide code blocks by default
+            codeBlocks.forEach((block) => {
+                const pre = block.parentElement;
+                pre.style.display = 'none';
+            });
+            toggleBtn.textContent = 'Show Code Blocks';
+            toggleBtn.setAttribute('aria-expanded', 'false');
+        }
+
+        // Attach event listener to the button
+        toggleBtn.addEventListener('click', toggleCodeBlocks);
+    });
+</script>
