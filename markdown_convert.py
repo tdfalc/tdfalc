@@ -27,25 +27,7 @@ def convert_markdown_to_html(input_file: str, output_file: str = None) -> None:
     <!DOCTYPE html>
     <html>
     <head>
-        <meta charset="utf-8">
-        <style>
-            {pygments_css}
-            .codehilite {{
-                background-color: {pygments_style.background_color};
-                border: 1px solid #ccc;
-                padding: 5px;
-                margin: 10px 0;
-                overflow: auto;
-            }}
-            .codehilite pre {{
-                margin: 0;
-                padding: 0;
-            }}
-            .codehilite code {{
-                background-color: transparent;
-                padding: 0;
-            }}
-        </style>
+      
     </head>
     <body>{body_html}</body>
     </html>
