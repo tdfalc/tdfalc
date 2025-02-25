@@ -13,9 +13,11 @@
 <body>
     <div id="about-content" class="wrap"></div>
     <script>
-        fetch('./content/about.html')
-            .then(response => response.text())
-            .then(data => {
+        fetch('/content/about.html')
+            .then(function (response) {
+                return response.text();
+            })
+            .then(function (data) {
                 document.getElementById('about-content').innerHTML = data;
             });
     </script>
