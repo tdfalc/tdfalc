@@ -7,18 +7,18 @@ import re
 from typing import Optional
 
 
-def move_files(input: Path, output: Path):
+def move_files(src: Path, dest: Path):
 
-    if os.path.exists(input):
+    if os.path.exists(src):
         try:
-            shutil.rmtree(input)
+            shutil.rmtree(src)
         except NotADirectoryError:
             pass
-    if os.path.exists(output):
-        shutil.move(output, input)
+    if os.path.exists(src):
+        shutil.move(src, dest)
 
 
-def process_md_file(md_file: Path, name: str) -> Optional[str]:
+def process_md_file(notebook: Path, md_file: Path, name: str) -> Optional[str]:
     """
     Processes a Markdown file by replacing SVG image syntax and math expressions.
     Additionally, extracts the date from lines starting with 'date: YYYY-MM-DD'.
@@ -61,9 +61,26 @@ def process_md_file(md_file: Path, name: str) -> Optional[str]:
 
     content = svg_pattern.sub(replace_svg, content)
 
+    # 2b. Replace GIF image syntax
+    # This regex matches ![gif](...)
+    gif_pattern = re.compile(r"!\[gif\]\((.*?)\)")
+
+    def replace_gif(match: re.Match) -> str:
+        # Extract the image path
+        image_path = match.group(1)
+        # Extract the filename from the path
+        loc = image_path.split("/")[-1]
+        # Construct the new path
+        new_path = f"assets/posts/{name}/{loc}"
+        # Save the gif in the file directory
+        shutil.copy(notebook.parent / loc, f"assets/posts/{name}/{loc}")
+        # Return the replacement string
+        return f'{{% include figure.html path="{new_path}" width="100%" %}}'
+
+    content = gif_pattern.sub(replace_gif, content)
+
     # 3. Replace math expressions
     # Pattern to match both inline ($x$) and display ($$x$$) math
-    # Using non-greedy matching and DOTALL to handle multi-line display math
     math_pattern = re.compile(r"(?<!\\)(\$\$?)(.+?)(?<!\\)\1", re.DOTALL)
 
     def replace_math(match: re.Match) -> str:
@@ -88,7 +105,7 @@ def process_md_file(md_file: Path, name: str) -> Optional[str]:
 
 
 def main():
-    notebook = sys.argv[1]
+    notebook = Path(sys.argv[1])
     name = os.path.basename(notebook).lower().split(".")[0]
 
     print(f"Converting {notebook} -> {name}")
@@ -101,13 +118,14 @@ def main():
     )
 
     img_dir = Path(f"./assets/posts/{name}")
+    os.makedirs(img_dir, exist_ok=True)
     img_dir_output = Path(post_dir / f"{name}_files")
-    move_files(img_dir, img_dir_output)
+    move_files(img_dir_output, img_dir)
     print(f"Moved image files from {img_dir_output} to {img_dir}")
 
-    extracted_date = process_md_file(post_dir / f"{name}.md", name)
+    extracted_date = process_md_file(notebook, post_dir / f"{name}.md", name)
     md_file = post_dir / f"{extracted_date}-{name}.md"
-    move_files(md_file, post_dir / f"{name}.md")
+    move_files(post_dir / f"{name}.md", md_file)
 
 
 if __name__ == "__main__":
