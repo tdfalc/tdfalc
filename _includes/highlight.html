@@ -6,9 +6,11 @@
 
 <!-- Initialize Highlight.js -->
 <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        document.querySelectorAll('pre code').forEach((block) => {
-            hljs.highlightElement(block);
-        });
+    document.addEventListener('DOMContentLoaded', function (event) {
+        var blocks = document.querySelectorAll('pre code');
+        for (var i = 0; i < blocks.length; i++) {
+            hljs.highlightElement(blocks[i]);
+        }
     });
+
 </script>

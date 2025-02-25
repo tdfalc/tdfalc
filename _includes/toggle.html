@@ -1,20 +1,21 @@
 <!-- JavaScript for Toggle Functionality -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const toggleBtn = document.getElementById('toggle-code-btn');
-        const codeBlocks = document.querySelectorAll('pre code');
+        var toggleBtn = document.getElementById('toggle-code-btn');
+        var codeBlocks = document.querySelectorAll('pre code');
 
         // Function to toggle code blocks visibility
         function toggleCodeBlocks() {
-            const isHidden = toggleBtn.getAttribute('aria-expanded') === 'false';
-            codeBlocks.forEach((block) => {
-                const pre = block.parentElement;
+            var isHidden = toggleBtn.getAttribute('aria-expanded') === 'false';
+            for (var i = 0; i < codeBlocks.length; i++) {
+                var block = codeBlocks[i];
+                var pre = block.parentElement;
                 if (isHidden) {
                     pre.style.display = 'block';
                 } else {
                     pre.style.display = 'none';
                 }
-            });
+            }
             // Update button text and aria attribute
             toggleBtn.textContent = isHidden ? 'Hide Code Blocks' : 'Show Code Blocks';
             toggleBtn.setAttribute('aria-expanded', isHidden);
@@ -23,15 +24,16 @@
         }
 
         // Initialize based on saved preference
-        const codeBlocksHidden = localStorage.getItem('codeBlocksHidden') === 'true';
+        var codeBlocksHidden = localStorage.getItem('codeBlocksHidden') === 'true';
         if (codeBlocksHidden) {
             toggleCodeBlocks();
         } else {
             // Hide code blocks by default
-            codeBlocks.forEach((block) => {
-                const pre = block.parentElement;
+            for (var i = 0; i < codeBlocks.length; i++) {
+                var block = codeBlocks[i];
+                var pre = block.parentElement;
                 pre.style.display = 'none';
-            });
+            }
             toggleBtn.textContent = 'Show Code Blocks';
             toggleBtn.setAttribute('aria-expanded', 'false');
         }
