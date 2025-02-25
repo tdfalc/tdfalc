@@ -2,3 +2,5 @@ first_name: Thomas
 middle_name: D.
 last_name: Falconer
 url: https://thomasfalconer.com 
+minifier:
+  enable_js_minification: false # Disable JavaScript minification in Jekyll Minifier
