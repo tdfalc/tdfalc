@@ -1,4 +1,4 @@
-# Deployment Guide
+# Deployment Steps
 1. Make changes, using `bundle exec jekyll serve` to iterate.
 2. Running `bundle exec jekyll build` will rebuild the site.
 3. Push new changes to `main` branch.
