@@ -2,7 +2,9 @@
 
 **Mechanism Design for Trading Information**
 
-Falconer, T., Kazempour, J., & Pinson, P. (2025). *Trading Information in Games*. (Work in progress).
+Falconer, T., Ratha, A., Kamgarpour, M., Kazempour, J., & Pinson, P. (2025). *Selling Data to a Rival Firm*. (Work in progress).
+<a class="nav-link" href="">Link</a>
+<a class="nav-link" href="https://github.com/tdfalc/trading-information">Code</a>
 
 **Collaborative Machine Learning**
 
