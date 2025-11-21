@@ -3,7 +3,7 @@
 
 ## Thomas Falconer
 
-<a class="nav-link" href="/research/">Research</a>
+<!-- <a class="nav-link" href="/research/">Research</a> -->
 <a class="nav-link" href="/blog/">Blog</a>
 <a class="nav-link" href="/resume/">Resume</a>
 
